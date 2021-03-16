@@ -28,7 +28,8 @@ class Solution {
             return false;
         }
         b[i][j] += 256;
-        boolean res = find(i + 1, j, index + 1, w, b) || find(i - 1, j, index + 1, w, b) || find(i, j - 1, index + 1, w, b) || find(i, j + 1, index + 1, w, b);
+        boolean res = find(i + 1, j, index + 1, w, b) || find(i - 1, j, index + 1, w, b) 
+            || find(i, j - 1, index + 1, w, b) || find(i, j + 1, index + 1, w, b);
         b[i][j] -= 256;
         return res;
     }
