@@ -21,7 +21,7 @@ class MinStack {
         } else {
             min = min > x ? x : min;
         }
-        length++;
+        length ++;
         stack.add(x);
     }
     
